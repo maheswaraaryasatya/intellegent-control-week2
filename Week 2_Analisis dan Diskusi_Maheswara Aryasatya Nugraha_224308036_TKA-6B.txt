@@ -1,0 +1,36 @@
+Nama		: Maheswara Aryasatya Nugraha
+NIM		: 224308036
+Kelas		: TKA-6B
+
+Analisis dan Diskusi
+WEEK 2
+* Analisis
+1. Bagaimana performa model dalam mendeteksi warna?
+Jawab : Performa model dalam mendeteksi warna bergantung pada kualitas dan variasi data pada dataset (color.csv). Model K-Nearest Neighbors (KNN) pada kode tersebut menggunakan fitur RGB untuk melakukan klasifikasi warna. Jika dataset mencakup berbagai warna secara merata, model akan memiliki akurasi yang baik dalam mendeteksi warna. Namun, jika warna tidak merata maka akan sebaliknya. Oleh karena itu, untuk memiliki performa yang baik secara objektif, dapat menggunakan metrik seperti akurasi, precision, recall, dan F1-score dengan membandingkan hasil dengan label asli pada data.
+
+2. Bagaimana perbedaan akurasi jika jumlah dataset ditambah?
+Jawab : Perbedaan akurasi jika menambah jumlah dataset adalah akan meningkatkan akurasi model, terutama jika data tambahan mencakup warna yang lebih luas, lebih banyak, dan detail, karena model mempelajari pola warna yang berbeda. Namun, jika data tambahan memiliki noise, maka performa model dan akurasi bisa menurun.
+
+3. Bagaimana cara meningkatkan kinerja model klasifikasi?
+Jawab : Cara meningkatkan kinerja model klasifikasi yaitu:
+- Hyperparameter Tuning, menguji berbagai nilai K pada KNN untuk menemukan parameter yang terbaik.
+- Algoritma Alternatif Lain, mempertimbangkan algoritma lain misalnya seperti Random Forest atau Support Vector Machine (SVM) yang bisa lebih baik dalam menangkap klasifikasi pola warna.
+- Feature Engineering, untuk menambah fitur tambahan seperti nilai HSV atau LAB yang lebih sesuai dan lebih respresentatif.
+- Cross Validation, untuk mengevaluasi model secara lebih akurat dan menghindari overfitting.
+
+
+* Diskusi
+1. Apa keuntungan Machine Learning dibandingkan metode berbasis aturan (rule-based)?
+Jawab : Keuntungan Machine Learning (ML) dibandingkan metode berbasis rull-based yaitu ML memiliki fleksibelitas yang lebih tinggi dan tidak memerlukan aturan yang ditulis secara manual, kemudian ML dapat belajar secara otomatasi dari data dan menangkap pola yang sulit. Selain itu, model ML dapat beradaptasi dengan mudah terhadap data baru dan meningkatnya akurasi seiring dengan waktu jika dibandingkan dengan rule-based.
+
+2. Bagaimana ML dapat diintegrasikan lebih lanjut dalam sistem kendali?
+Jawab : ML dapat diintegrasikan lebih lanjut dan jauh dalam sistem kendali unruk meningkatkan efisiensi dan adaptasi. Beberapa contohnya yaitu dalam sistem ototmasi, model ML dapat digunakan untuk deteksi objek secara real-time menggnakan kamera, kemudian dihubungkan dengan actuator untuk pengambilan tindakan secara otomatis. Selain itu, ML digunakan untuk memprediksi sistem dan optimasi, seperti mengatur parameter control berdasarkan kondisi lingkungan yang berubah-ubah.
+
+3. Apa saja tantangan dalam penerapan ML dalam sistem real-time?
+Jawab : Tantangan penerapan ML dalam sistem real-time yaitu:
+- Keterlambatan dalam pengambilan keputusan.
+- Keterbatasan CPU, GPU, dan memori pada perangkat embedded.
+- Keandalaln dan akurasi dalam kondisi lingkungan yang noise dan dinamis dapat mempengaruhi input sensor.
+- Model ML dapat overfitting jika tidak diperbaharui secara berkala dan tidak dilatih dengan dataset yang beragam.
+
+
